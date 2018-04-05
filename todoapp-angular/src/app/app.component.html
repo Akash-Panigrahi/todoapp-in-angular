@@ -1,8 +1,16 @@
+<header class="page-header" style="background: #aeaeae; color: #1e1e1e; padding: 15px 0;">
+  <div class="container">
+    <h1 style="margin: 0;">Todo
+      <small>App</small>
+    </h1>
+  </div>
+</header>
+
 <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
     <div class="todos" *ngIf="todosList.length !== 0">
-      <table class="table">
+      <table class="table" style="text-align: center;">
         <thead class="h">
           <tr class="h">
             <th class="h">Title</th>
@@ -53,10 +61,10 @@
     <form>
       <div class="form-row">
         <div class="col-md-5">
-          <input type="text" name="title" id="title" [(ngModel)]="newTodo.title" placeholder="Title" class="form-control">
+          <input type="text" name="title" id="title" [(ngModel)]="newTodo.title" placeholder="Title" class="form-control" style="text-align: center;">
         </div>
         <div class="col-md-5">
-          <input name="description" id="description" [(ngModel)]="newTodo.description" placeholder="Description" class="form-control">
+          <input name="description" id="description" [(ngModel)]="newTodo.description" placeholder="Description" class="form-control" style="text-align: center;">
         </div>
         <div class="col-md-2">
           <button type="submit" class="btn btn-primary" (click)="create()">Add</button>
